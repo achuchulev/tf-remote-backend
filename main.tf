@@ -1,4 +1,4 @@
-# Using a single workspace:
+# Using a single workspace as TFE remote backend
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
