@@ -1,6 +1,12 @@
+# Using a single workspace:
 terraform {
-  backend "atlas" {
-    name = "atanasc/tf-remote-backend"
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "atanasc"
+
+    workspaces {
+      name = "tf-remote-backend"
+    }
   }
 }
 
